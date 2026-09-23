@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for learners driving test assistance.">
+  <title>Learners Test Assistance | DriveAssist</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="DriveAssist home">
+      <div class="logo-placeholder">LOGO</div>
+      <span>DriveAssist</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div>
+        <p class="eyebrow">GET STARTED</p>
+        <h1>Learners Driving Test Assistance</h1>
+        <p>Complete your details below so our team can assist with your learners driving test booking.</p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <form id="registrationForm" class="registration-form" novalidate>
+        <div class="form-section-title">
+          <span>01</span>
+          <div>
+            <h2>Personal information</h2>
+            <p>Please provide accurate information.</p>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <label>Full Name *
+            <input type="text" name="fullName" autocomplete="given-name" required>
+          </label>
+          <label>Surname *
+            <input type="text" name="surname" autocomplete="family-name" required>
+          </label>
+          <label>ID Number *
+            <input type="text" name="idNumber" inputmode="numeric" maxlength="13" required>
+          </label>
+          <label>Date of Birth *
+            <input type="date" name="dateOfBirth" required>
+          </label>
+          <label>Phone Number *
+            <input type="tel" name="phone" autocomplete="tel" required>
+          </label>
+          <label>Email Address *
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+        </div>
+
+        <label>Residential Address *
+          <textarea name="address" rows="3" required></textarea>
+        </label>
+
+        <div class="form-section-title">
+          <span>02</span>
+          <div>
+            <h2>Driving test information</h2>
+            <p>Select the vehicle category and preferred test details.</p>
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>Select Your Vehicle Type *</legend>
+          <div class="vehicle-options">
+            <label class="vehicle-card">
+              <input type="radio" name="vehicleType" value="Light Motor Vehicle" required>
+              <span><strong>Light Motor Vehicle</strong><small>Cars and similar light vehicles</small></span>
+            </label>
+            <label class="vehicle-card">
+              <input type="radio" name="vehicleType" value="Heavy Motor Vehicle">
+              <span><strong>Heavy Motor Vehicle</strong><small>Heavy vehicles</small></span>
+            </label>
+            <label class="vehicle-card">
+              <input type="radio" name="vehicleType" value="Motorcycle">
+              <span><strong>Motorcycle</strong><small>Motorcycle testing</small></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-grid">
+          <label>Preferred Testing Location *
+            <input type="text" name="testingLocation" placeholder="e.g. Randburg Testing Station" required>
+          </label>
+          <label>Preferred Testing Date *
+            <input type="date" name="testingDate" required>
+          </label>
+        </div>
+
+        <label>Additional Information / Special Requests
+          <textarea name="additionalInfo" rows="5" placeholder="Tell us anything else we should know..."></textarea>
+        </label>
+
+        <input type="hidden" name="service" value="Learners Driving Test Assistance">
+        <input type="hidden" name="_subject" value="New Learners Driving Test Assistance Registration">
+        <input type="hidden" name="_next" value="https://YOUR-DOMAIN.com/success.html">
+
+        <div id="formMessage" class="form-message" role="alert" aria-live="polite"></div>
+
+        <div class="form-actions">
+          <a href="index.html" class="btn btn-light">Back</a>
+          <button type="submit" class="btn btn-primary">Submit & Continue</button>
+        </div>
+
+        <p class="privacy-note">Your information should be handled through a secure backend or booking platform. This demo does not send personal information anywhere until a real endpoint is configured.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 DriveAssist. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/registration.js"></script>
+</body>
+</html>
